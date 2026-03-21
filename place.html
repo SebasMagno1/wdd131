@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Place</title>
+
+  <meta name="description" content="Discover this amazing place">
+  <meta name="author" content="Jose Escobar">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>My Favorite Place</h1>
+</header>
+
+<main>
+
+  <!-- HERO IMAGE (RESPONSIVE) -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <img src="images/hero-small.webp" alt="Beautiful place landscape">
+    </picture>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="info">
+    <h2>About</h2>
+    <p>This is a beautiful place with amazing landscapes and culture.</p>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="weather">
+    <h2>Weather</h2>
+
+    <!-- Mobile icon (SVG) -->
+    <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+    <p>Temperature: <span id="temp">8</span> °C</p>
+    <p>Wind Speed: <span id="wind">10</span> km/h</p>
+    <p>Wind Chill: <span id="windchill"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span></p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
