@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Product Review Form</h1>
+</header>
+
+<main>
+  <form method="get" action="review.html">
+
+    <!-- Product Name -->
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+      <option value="" disabled selected>Select a Product ...</option>
+    </select>
+
+    <!-- Overall Rating -->
+    <fieldset>
+      <legend>Overall Rating</legend>
+
+      <label>
+        <input type="radio" name="rating" id="r1" value="1" required> ☆
+      </label>
+      <label>
+        <input type="radio" name="rating" id="r2" value="2"> ☆☆
+      </label>
+      <label>
+        <input type="radio" name="rating" id="r3" value="3"> ☆☆☆
+      </label>
+      <label>
+        <input type="radio" name="rating" id="r4" value="4"> ☆☆☆☆
+      </label>
+      <label>
+        <input type="radio" name="rating" id="r5" value="5"> ☆☆☆☆☆
+      </label>
+
+    </fieldset>
+
+    <!-- Date -->
+    <label for="date">Date of Installation</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Features -->
+    <fieldset>
+      <legend>Useful Features</legend>
+
+      <label><input type="checkbox" id="f1" name="features" value="Durability"> Durability</label>
+      <label><input type="checkbox" id="f2" name="features" value="Design"> Design</label>
+      <label><input type="checkbox" id="f3" name="features" value="Performance"> Performance</label>
+      <label><input type="checkbox" id="f4" name="features" value="Value"> Value</label>
+
+    </fieldset>
+
+    <!-- Review -->
+    <label for="review">Written Review</label>
+    <textarea id="review" name="review"></textarea>
+
+    <!-- Name -->
+    <label for="username">User Name</label>
+    <input type="text" id="username" name="username">
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Review">
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> | Jose Sebastian Escobar Salinas | Bolivia</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
